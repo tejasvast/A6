@@ -1,0 +1,36 @@
+
+@media (max-width:768px){
+  .custom-btn{
+    width:40px !important;
+    height:40px !important;
+  }
+}
+
+.custom-btn{
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(255,255,255,0.85);
+    border-radius: 9999px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ddd;
+    color: black !important;
+    transition: all 0.3s ease;
+}
+
+.custom-btn::after{
+    display:none;   /* remove default swiper arrows */
+}
+
+.custom-btn:hover{
+    background: white;
+    transform: scale(1.1);
+}
+
+.swiper-button-disabled{
+    opacity:0 !important;
+    pointer-events:none;
+}
+
+.custom-btn i{
+    font-size: 30px;
+}
